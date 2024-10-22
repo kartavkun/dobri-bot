@@ -10,13 +10,13 @@ if not API_TOKEN:
     print("Error: API_TOKEN not found. Please set it in your .env file.")
     exit()
 
-initial_channels = ["kartav__", "ivango", "senyawei", "v1llix_", "glebauster"]
+initial_channels = ["kartav__", "ivango", "senyawei", "v1llix_", "glebauster", "godroponika", "quizzzzz_", "vudek", "f0rz__", "steisha_owo", "sor0k4", "skyfai_", "zoomqge", "lofkes_", "sandron", "kkanoyaa", "desuqe_", "dahujka_owo", "hober38_", "modlessflash", "wavewyyy", "zxbatonzx"]
 
 tg_chat = "https://t.me/+55sAWAXVXPQ2ZDY6"
 discord_server = "https://discord.gg/CGz59AAGrU"
 
 class Bot(commands.Bot):
-    
+
     def __init__(self):
         super().__init__(token=API_TOKEN, prefix='!', initial_channels=initial_channels)
 
