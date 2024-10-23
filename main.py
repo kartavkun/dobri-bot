@@ -10,7 +10,7 @@ if not API_TOKEN:
     print("Error: API_TOKEN not found. Please set it in your .env file.")
     exit()
 
-initial_channels = ["kartav__", "ivango", "senyawei", "v1llix_", "glebauster", "godroponika", "quizzzzz_", "vudek_", "pokemonyaaa", "25mosey", "mjewskiosu", "f0rz__", "steisha_owo", "sor0k4", "skyfai_", "zoomqge", "lofkes_", "sandron", "kkanoyaa", "desuqe_", "dahujka_owo", "hober38_", "modlessflash", "wavewyyy", "zxbatonzx"]
+initial_channels = ["kartav__", "ivango", "senyawei", "v1llix_", "glebauster", "godroponika", "quizzzzz_", "vudek_", "pokemonyaaa", "25mosey", "majewskiosu", "f0rz__", "steisha_owo", "sor0k4", "skyfai_", "zoomqge", "lofkes_", "sandron", "kkanoyaa", "desuqe_", "dahujka_owo", "hober38_", "modlessflash", "wavewyyy", "mitor0_", "zxbatonzx"]
 
 tg_chat = "https://t.me/+55sAWAXVXPQ2ZDY6"
 discord_server = "https://discord.gg/CGz59AAGrU"
@@ -25,7 +25,7 @@ class Bot(commands.Bot):
         print(f'User ID is | {self.user_id}')
         self.send_links.start()  # Запускаем рутину при готовности бота
 
-    @routines.routine(minutes=15, iterations=0)  # Бесконечные итерации
+    @routines.routine(minutes=30, iterations=0)  # Бесконечные итерации
     async def send_links(self):
         for channel in initial_channels:
             try:
